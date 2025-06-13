@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-10 02:10:22 AM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMDswMTo0NjoxMyBBTTsyNjYx"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMDswMjoxMDoyMiBBTTsxOzI3NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="satis, karoran, zararoran, fiyat" type="Real" array="False" size=""/>
+            <output expression="&quot;&#252;r&#252;n fiyat&#305;n&#305; yaz&#305;n&quot;" newline="True"/>
+            <input variable="fiyat"/>
+            <output expression="&quot;kar oran&#305; giriniz&quot;" newline="True"/>
+            <input variable="karoran"/>
+            <output expression="&quot;zarar oran&#305; giriniz&quot;" newline="True"/>
+            <input variable="zararoran"/>
+            <assign variable="karoran" expression="fiyat+fiyat*karoran/100"/>
+            <assign variable="zararoran" expression="fiyat-fiyat*zararoran/100"/>
+            <output expression="&quot;kar oran&#305;: &quot;&amp;karoran" newline="True"/>
+            <output expression="&quot;zarar oran&#305;: &quot;&amp;zararoran" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

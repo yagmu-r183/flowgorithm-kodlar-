@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-09 02:35:33 AM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0wODswNDoxMjoxMiBQTTsyNjc4"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0wOTswMjozNTozMyBBTTs1OzI3ODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, birb, onb, yuzb" type="Integer" array="False" size=""/>
+            <declare name="ort" type="Real" array="False" size=""/>
+            <output expression="&quot;3 basamakl&#305; bir say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="yuzb" expression="sayi/100"/>
+            <assign variable="onb" expression="(sayi/10)%10"/>
+            <assign variable="birb" expression="sayi%10"/>
+            <assign variable="ort" expression="(birb+onb+yuzb)/3"/>
+            <output expression="&quot;ortalama:&quot;&amp;ort" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

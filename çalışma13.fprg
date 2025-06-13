@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-10 01:05:40 AM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMDsxMjo0NjozOCBBTTsyNjcw"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMDswMTowNTo0MCBBTTszOzI3NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="km, m, cm" type="Real" array="False" size=""/>
+            <output expression="&quot;bir metre de&#287;eri giriniz&quot;" newline="True"/>
+            <input variable="m"/>
+            <assign variable="km" expression="m*10^-3"/>
+            <assign variable="cm" expression="m*10^2"/>
+            <output expression="&quot;km:&quot;&amp;km" newline="True"/>
+            <output expression="&quot;cm:&quot;&amp;cm" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

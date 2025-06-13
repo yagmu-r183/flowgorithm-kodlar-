@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 03:45:46 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMzswMjo1NTo0NSBQTTsyNjg1"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMzswMzo0NTo0NiBQTTsxOzI3OTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, cevre, alan" type="Integer" array="False" size=""/>
+            <output expression="&quot;dikd&#246;rtgenin bir kenar&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;dikd&#246;rtgenin di&#287;er kenar&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="y"/>
+            <assign variable="cevre" expression="2*x+2*y"/>
+            <assign variable="alan" expression="x*y"/>
+            <output expression="&quot;alan:&quot;&amp;alan" newline="True"/>
+            <output expression="&quot;&#231;evre:&quot;&amp;cevre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

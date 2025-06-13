@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-14 09:56:10 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xNDswODo0MTowOCBQTTsyNjg2"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xNDswOTo1NjoxMCBQTTs1OzI3OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x1, x2, sayac, ebob" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <output expression="&quot;iki say&#305; giriniz&quot;" newline="True"/>
+            <output expression="&quot;x1 de&#287;erini giriniz&quot;" newline="True"/>
+            <input variable="x1"/>
+            <output expression="&quot;x2 de&#287;erini giriniz&quot;" newline="True"/>
+            <input variable="x2"/>
+            <if expression="x1&gt;x2">
+                <then>
+                    <do expression="sayac&lt;=x2">
+                        <if expression="x1%sayac==x2%sayac&amp;&amp;x1%sayac==0">
+                            <then>
+                                <assign variable="ebob" expression="sayac"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="sayac" expression="sayac+1"/>
+                    </do>
+                </then>
+                <else>
+                    <do expression="sayac&lt;=x1">
+                        <if expression="x1%sayac==x2%sayac&amp;&amp;x2%sayac==0">
+                            <then>
+                                <assign variable="ebob" expression="sayac"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="sayac" expression="sayac+1"/>
+                    </do>
+                </else>
+            </if>
+            <output expression="&quot;EBOB:&quot;&amp;ebob" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

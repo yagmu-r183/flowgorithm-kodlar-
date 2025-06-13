@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-15 12:00:22 AM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xNDswOTo1NjoyOCBQTTsyNjk1"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xNTsxMjowMDoyMiBBTTsxOzI3NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="t, n, i, y, z" type="Integer" array="False" size=""/>
+            <output expression="&quot;n de&#287;erini giriniz&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;t de&#287;erini giriniz&quot;" newline="True"/>
+            <input variable="t"/>
+            <if expression="n&gt;t">
+                <then>
+                    <for variable="i" start="t" end="n" direction="inc" step="1">
+                        <for variable="z" start="2" end="t-1" direction="inc" step="1">
+                            <if expression="t%z!=0">
+                                <then>
+                                    <assign variable="z" expression="z+1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </for>
+                        <output expression="&quot;asal&quot;&amp;t" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="i" start="n" end="t" direction="inc" step="1">
+                        <for variable="z" start="2" end="n-1" direction="inc" step="1">
+                            <if expression="n%z!=0">
+                                <then>
+                                    <assign variable="z" expression="z+1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </for>
+                        <output expression="&quot;asal&quot;&amp;z" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

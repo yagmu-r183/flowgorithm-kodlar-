@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-10 01:46:12 AM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMDswMTowNTo0NCBBTTsyNjYw"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMDswMTo0NjoxMiBBTTsyOzI3Njk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, yuzde, sonuc" type="Real" array="False" size=""/>
+            <output expression="&quot;bir say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <output expression="&quot;almak istedi&#287;iniz y&#252;zdeli&#287;i giriniz&quot;" newline="True"/>
+            <input variable="yuzde"/>
+            <assign variable="sonuc" expression="sayi*yuzde/100"/>
+            <output expression="&quot;i&#351;leminizin sonucu: &quot;&amp;sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

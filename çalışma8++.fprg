@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-09 02:48:07 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0wOTswMjoyOTozOCBQTTsyNjkz"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0wOTswMjo0ODowNyBQTTsxOzI3OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayinintersi" type="Integer" array="False" size=""/>
+            <output expression="&quot;bir say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="sayinintersi" expression="0"/>
+            <do expression="sayi!=0">
+                <assign variable="sayinintersi" expression="sayinintersi*10"/>
+                <assign variable="sayinintersi" expression="sayinintersi+sayi%10"/>
+                <assign variable="sayi" expression="sayi/10"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

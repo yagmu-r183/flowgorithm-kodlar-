@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-15 02:03:27 AM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xNTswMTo1MzozMiBBTTsyNjY1"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xNTswMjowMzoyNyBBTTsxOzI3NzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="toplam, sayi, sayac" type="Integer" array="False" size=""/>
+            <output expression="&quot;say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="sayac" expression="1"/>
+            <assign variable="toplam" expression="0"/>
+            <do expression="sayac&lt;=sayi">
+                <if expression="sayi%sayac==0">
+                    <then>
+                        <assign variable="toplam" expression="toplam+sayac"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+            </do>
+            <if expression="toplam==sayi*2">
+                <then>
+                    <output expression="&quot;m&#252;kemmel say&#305;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;m&#252;kemmel say&#305; de&#287;il&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

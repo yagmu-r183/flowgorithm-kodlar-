@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-10 12:46:36 AM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMDsxMjoxMTo1MiBBTTsyNjU4"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMDsxMjo0NjozNiBBTTsyOzI3Nzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <declare name="isim" type="String" array="False" size=""/>
+            <output expression="&quot;tekrarlamak istedi&#287;iniz ismi giriniz&quot;" newline="True"/>
+            <input variable="isim"/>
+            <output expression="&quot;ka&#231; kere tekrarlans&#305;n?&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <do expression="i&lt;=n">
+                <assign variable="i" expression="i+1"/>
+                <output expression="&quot;:&quot;&amp;isim" newline="True"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

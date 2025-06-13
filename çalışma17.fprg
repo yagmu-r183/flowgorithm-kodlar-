@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 07:59:27 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMzswMzo0NjowMCBQTTsyNjc3"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0xMzswNzo1OToyNyBQTTsxOzI4MDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="delta, x1, x2, denklem, a, b, c, x, x3" type="Real" array="False" size=""/>
+            <output expression="&quot;katsay&#305; de&#287;erlerini giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="x" expression="1"/>
+            <assign variable="delta" expression="b^2-4*a*c"/>
+            <assign variable="denklem" expression="a*x^2+b*x+c"/>
+            <if expression="delta&gt;0">
+                <then>
+                    <assign variable="x1" expression="(-b-(delta)^1/2)/2*a"/>
+                    <assign variable="x2" expression="(-b+(delta)^1/2)/2*a"/>
+                    <output expression="&quot;k&#246;k:&quot;&amp;x1" newline="True"/>
+                    <output expression="&quot;k&#246;k:&quot;&amp;x2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="delta==0">
+                        <then>
+                            <assign variable="x3" expression="-b/2*a"/>
+                            <output expression="&quot;k&#246;k:&quot;&amp;x3" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;reel k&#246;k yok&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

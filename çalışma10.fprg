@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-09 03:26:38 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0wOTswMjo1OTo0OCBQTTsyNjk3"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0wOTswMzoyNjozOCBQTTsxOzI3OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, TOPLAM, &#304;" type="Integer" array="False" size=""/>
+            <output expression="&quot;B&#304;R SAYI G&#304;R&#304;N&#304;Z&quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="TOPLAM" expression="0"/>
+            <for variable="&#304;" start="1" end="N" direction="inc" step="1">
+                <assign variable="TOPLAM" expression="TOPLAM+&#304;"/>
+            </for>
+            <output expression="&quot;SONU&#199;:&quot;&amp;TOPLAM" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
