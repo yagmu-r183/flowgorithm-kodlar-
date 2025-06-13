@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-23 07:54:16 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0yMzswNjo0MDo0MSBQTTsyNjgw"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0yMzswNzo1NDoxNiBQTTsxOzI3OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="top, islem, n, i" type="Real" array="False" size=""/>
+            <assign variable="top" expression="0"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="top" expression="top+1/i"/>
+            </for>
+            <output expression="&quot;toplam:&quot;&amp;top" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
