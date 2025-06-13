@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-23 01:57:20 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0yMzsxMjo1MToyNyBQTTsyNjgz"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVVQMVZNOUc7MjAyMy0xMS0yMzswMTo1NzoyMCBQTTsxOzI3ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, s, top, topl" type="Integer" array="False" size=""/>
+            <output expression="&quot;n say&#305;s&#305; girin&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="topl" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="top" expression="0"/>
+                <for variable="s" start="1" end="i" direction="inc" step="1">
+                    <if expression="i%s==0">
+                        <then>
+                            <assign variable="top" expression="top+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="top==2">
+                    <then>
+                        <assign variable="topl" expression="topl+i"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="top==2">
+                    <then>
+                        <output expression="&quot;asald&#305;r:&quot;&amp;i" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;asal de&#287;ildir:&quot;&amp;i" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;toplam:&quot;&amp;topl" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
